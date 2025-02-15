@@ -1,0 +1,49 @@
+.font{
+    font-family: "Playfair Display", serif;
+}
+.text-font{
+    font-family: "Inter", sans-serif;
+}
+.text-h{
+    font-family: "Lora", serif;
+}
+
+.reviews-slider .slick-slide {
+    margin: 0 15px;  /* Adds space between slides */
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px;
+    color: #009746;  /* Customize arrow color */
+    z-index: 1;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #fff;  /* Change color on hover */
+}
+
+.slick-arrow {
+    display: none !important;
+  }
+
+/* Normal state */
+.slick-dots li button::before {
+    margin-top: 10px!important;
+    font-size: 14px!important; 
+    color: white!important; 
+}
+  
+  
+.slick-dots li button:hover::before {
+    color: black;
+}
+  
+  /* Active state (current slide) */
+.slick-dots li.slick-active button::before {
+    color: red; 
+}
+
+
+
+
+

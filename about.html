@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraj Makeover</title>
+    <link rel="shortcut icon" href="images/viraj_logo-removebg-preview 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+    <!-- Slick Slider Theme CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+</head>
+
+<body>
+    <!-- Header Section (Sticky) -->
+    <header class="bg-[#212121] hidden:border-b-2 md:border-b-2 border-[#fefefe3b]" id="header">
+        <div class="container mx-auto">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between p-4">
+                <!-- Logo -->
+                <div class="relative flex items-center order-1 md:order-2">
+                    <img src="images/viraj_logo-removebg-preview 1.png" alt="Logo" class="w-20">
+                    <img src="images/Group 26 (1).png" alt="" class="absolute top-0 right-[-15px]">
+                </div>
+
+                <!-- Menu Icon (Hamburger) -->
+                <div class="text-white order-2 md:order-1">
+                    <button id="menu-toggle">
+                        <i class="fa-solid fa-bars text-[24px]"></i>
+                    </button>
+                </div>
+
+                <!-- Search & Button -->
+                <div class="hidden md:flex items-center space-x-4 order-3">
+                    <!-- Search Icon -->
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass w-6 h-6 text-white"></i>
+                    </button>
+                    <a href="#" class="bg-[#009746] text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
+                        Get A Quote →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section (Initially hidden) -->
+    <div id="menu"
+        class="hidden md:bg-[url('images/Rectangle.png')] absolute top-0 left-0 w-full h-full bg-cover bg-center bg-[#212121] z-50 transform transition-all duration-500 ease-in-out">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="pt-5 px-4">
+                    <div class="flex justify-between items-center md:justify-between">
+
+                        <img src="images/viraj_logo-removebg-preview 1.png" alt="Logo" class="w-20">
+
+                        <button id="close-menu" class="text-white text-3xl ">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+
+
+                    <!-- Navigation Links -->
+                    <ul class="flex flex-col space-y-3 lg:space-y-5 text-white font text-center mt-8 lg:mt-[10%]">
+                        <li><a href="./index.html" class="text-2xl nav-link hover:text-[#009746]">Home</a></li>
+                        <li><a href="./about.html" class="text-2xl nav-link hover:text-[#009746]">About Us</a></li>
+                        <li><a href="./product.html" class="text-2xl nav-link hover:text-[#009746]">Products</a></li>
+                        <li><a href="./gallery.html" class="text-2xl nav-link hover:text-[#009746]">Gallery</a></li>
+                        <li><a href="./blog.html" class="text-2xl nav-link hover:text-[#009746]">Blog</a></li>
+                        <li><a href="./contact.html" class="text-2xl nav-link hover:text-[#009746]">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-[10px] p-6 border-t border-b border-white/10 hidden md:block">
+            <div class="container mx-auto">
+                <div class="row grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm">
+                    <div class="flex items-center rounded-lg">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+
+                        <!-- Address Text -->
+                        <span class="text-[16px] text-start text-[#B8B8B8] text-font ms-3">
+                            211, The Grand Plaza, VIP Road, Vesu,<br> Surat, Gujarat 395007
+                        </span>
+                    </div>
+
+
+                    <div class="p-5 flex  items-center justify-center">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-phone-volume  text-lg"></i>
+                        </button>
+
+                        <span class="text-[22px] text-[#B8B8B8] text-font ms-3">08048128938</span>
+                    </div>
+
+
+                    <div class="p-5 flex  items-center justify-center">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </button>
+
+                        <span class="text-[22px] text-[#B8B8B8] text-font ms-3"> purefamilysalon@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- about us  -->
+    <section class="relative bg-[url('images/about.png')] h-[550px] bg-cover bg-center flex items-center -z-10">
+        <div class="absolute inset-0 bg-black opacity-60 mix-blend-multiply"></div>
+        <div class="container mx-auto px-4">
+            <div class="row">
+                <div>
+                    <img src="images/Vector 1 (1).png" alt=""
+                        class="top-[25%] w-28 lg:w-40 absolute  md:left-[10%] lg:left-[12%]">
+                    <h1
+                        class="uppercase text-[28px] md:text-[48px] lg:text-[80px] font font-bold text-white absolute left-[10%] md:left-[13%] lg:left-[15%] top-[35%] md:top-[30%] lg:top-[35%]">
+                        About Us
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="images/Rectangle 6.png" alt="" class="w-full">
+
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[16%] left-4 md:top-[18%] lg:top-[18%]  text-center">
+                <a href=""><i class="fa-brands fa-instagram text-white"></i></a>
+            </div>
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[43%] left-4 md:top-[41.5%] lg:top-[45%]  text-center">
+                <a href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+            </div>
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[70%] left-4 md:top-[66%] lg:top-[70%]  text-center">
+                <a href=""><i class="fa-brands fa-youtube text-white"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- natural better  -->
+    <section class="bg-[#212121] py-10 lg:py-16">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="flex justify-center items-center order-2 lg:order-1 mx-5 lg:mx-0">
+                        <img src="images/Group 1000004497.png" alt="" class="w-[400px] lg:w-[500px]">
+                    </div>
+
+                    <div class="relative text-start order-1 p-4 lg:order-2">
+                        <img src="images/Group 1000004492.png" alt="" class="absolute right-[-60px]  top-20 hidden md:block">
+
+                        <div class="flex items-center">
+                            <h1 class="font text-[24px] md:text-[48px] font-bold text-white">
+                                Natural is <span class="text-[#009746]">Better</span>
+                            </h1>
+                            <img src="images/Section.png" alt="Section Icon" class="w-10 h-10 ps-2">
+
+                        </div>
+                        <p class="uppercase text-[#B8B8B8] text-[13px] lg:text-[18px] text-font pt-4">What do you want
+                            to achieve with your
+                            makeover? Are you looking to <br>update your style, improve your health, or enhance your
+                            overall well- <br> being? Having clear goals will help you focus your efforts.</p>
+
+                        <p class=" text-[#B8B8B8] py-2 text-font text-[13px] lg:text-[18px]">f you're looking to revamp
+                            your style, start by going
+                            through your wardrobe. Donate or <br>discard clothing that no longer fits or suits your
+                            taste. Invest in some new pieces that <br> align with your desired style.</p>
+
+                        <p class="uppercase text-[#B8B8B8] text-font text-[13px] lg:text-[18px]">A "makeover" typically
+                            refers to the process of
+                            transforming or<br> enhancing someone's appearance, a space, or an object. Here's a general
+                            <br>outline of how you can go about different types of makeovers:
+                        </p>
+
+                        <p class=" text-[#B8B8B8] py-2 text-font text-[13px] lg:text-[18px]">f you're looking to revamp
+                            your style, start by going
+                            through your wardrobe. Donate or <br>discard clothing that no longer fits or suits your
+                            taste. Invest in some new pieces that <br> align with your desired style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- history -->
+    <section class="bg-[#212121]">
+        <div class="container mx-auto md:py-10">
+            <div class="flex items-center justify-center">
+                <h1 class="font text-[24px] md:text-[48px] font-bold text-white ">
+                    Our <span class="text-[#009746]">History</span>
+                </h1>
+                <img src="images/Section.png" alt="Section Icon" class="w-10 h-10 ps-2">
+            </div>
+
+            <p class="text-[#B8B8B8] text-center text-[13px] lg:text-[18px] pt-5 text-font px-3">Certainly! History is
+                the study of past events,
+                particularly human experiences and activities. It provides insight into how societies, cultures, and
+                civilizations have evolved <br>over time. Here's an overview of key aspects of history:Historians divide
+                history into periods to make it more manageable. Common divisions include ancient history,<br> medieval
+                history, modern history, and contemporary history. These divisions help in understanding the context of
+                different time periods.</p>
+
+            <p class="text-[#B8B8B8] text-center text-[13px] lg:text-[18px] pt-5 text-font px-3 lg:px-0">Historians rely
+                on various sources to reconstruct and
+                understand the past. These sources can be primary (direct accounts or artifacts from the time) or
+                secondary <br>(interpretations and analyses of primary sources).Historians use methods such as research,
+                analysis, and critical thinking to interpret and make sense of historical data. <br>They often compare
+                and contrast different sources to gain a more accurate understanding of events</p>
+        </div>
+    </section>
+
+    <!-- mission and vision  -->
+    <section class="bg-[#212121]">
+        <div class="container mx-auto py-10 lg:py-20">
+            <div class="flex items-center justify-center">
+                <h1 class="font text-[24px] md:text-[48px] font-bold text-white ">
+                    Our <span class="text-[#009746]">Mission & Vision</span>
+                </h1>
+                <img src="images/Section.png" alt="Section Icon" class="w-10 h-10 ps-2">
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[40%,60%] pt-5 md:pt-10">
+                <!-- First Column (40%) -->
+                <div class="flex justify-center items-center">
+                    <div class="flex">
+                        <img src="images/Group 1000004582.png" alt="" class="w-[350px]">
+                        <img src="images/Group 1000004583.png" alt="" class="w-[100px] hidden xl:block">
+                    </div>
+                </div>
+                <!-- Second Column (60%) -->
+                <div>
+                    <div class="text-start p-4">
+                        <h2 class="text-[18px] lg:text-[24px] font text-white">Our Mission</h2>
+                        <p class="text-font text-[#B8B8B8] text-[13px] lg:text-[18px] pt-2">There are many variations of
+                            passages of Lorem Ipsum
+                            available, but the majority have suffered <br>alteration in some form, by injected humour,
+                            or randomised words which don't look even slightly <br>believable. If you are going to use a
+                            passage of Lorem Ipsum,</p>
+                    </div>
+                    <div class="text-start">
+                        <h2 class="text-[18px] lg:text-[24px] font text-white pt-2 lg:pt-10 ps-5">Our Vision</h2>
+                        <p class="text-font text-[#B8B8B8] text-[13px] lg:text-[18px] pt-2 ps-5">There are many
+                            variations of passages of Lorem
+                            Ipsum available, but the majority have suffered <br>alteration in some form, by injected
+                            humour, or randomised words which don't look even slightly <br>believable. If you are going
+                            to use a passage of Lorem Ipsum,</p>
+                    </div>
+                    <div class="text-start p-4">
+                        <h2 class="text-[18px] lg:text-[24px] font text-white pt-2 lg:pt-10">Our Values</h2>
+                        <p class="text-font text-[#B8B8B8] text-[13px] lg:text-[18px] pt-2">There are many variations of
+                            passages of Lorem Ipsum
+                            available, but the majority have suffered <br>alteration in some form, by injected humour,
+                            or randomised words which don't look even slightly <br>believable. If you are going to use a
+                            passage of Lorem Ipsum,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service  img-->
+    <section>
+        <div class="relative grid grid-cols-2">
+            <!-- First Image -->
+            <div class="relative">
+                <img src="images/Group 25.png" alt="" class="w-full h-36 md:h-auto">
+            </div>
+
+            <!-- Second Image -->
+            <div class="relative">
+                <img src="images/Group 26.png" alt="" class="w-full h-36 md:h-full">
+            </div>
+
+            <!-- Heading Positioned Above Both Images -->
+            <h1 class="absolute left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 
+                text-[22px] md:text-[50px] lg:text-[52px] font-bold font text-white text-center">
+                We Give Always Best <br class="sm:hidden"> Services Provide
+            </h1>
+        </div>
+    </section>
+
+    <!-- Clients Reviews -->
+    <section class="bg-[#212121]">
+        <div class="container mx-auto py-16">
+            <div class="row">
+                <div class="flex flex-col items-center text-center ">
+                    <div class="flex items-center justify-center space-x-3">
+                        <h1 class="font text-[24px] lg:text-[48px] font-bold text-white">
+                            Clients <span class="text-[#009746]">Reviews</span>
+                        </h1>
+                        <img src="images/Section.png" alt="Section Icon" class="w-10 h-10">
+                    </div>
+                </div>
+
+                <div class="pt-5">
+                    <!-- Slick Slider Container -->
+                    <div class="reviews-slider">
+                        <!-- Review Item 1 -->
+                        <div class="bg-[url('images/1k.png')] p-12 rounded-md ">
+                            <p class="text-center text-[18px] text-white text-font">OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects.Love yait for me to use on my projects.</p>
+                            <img src="images/Star.png" alt="" class="text-center pt-10 mx-auto">
+                            <div class="flex justify-center items-center pt-14">
+                                <img src="images/Ellipse 1.png" alt="">
+                                <div class="ms-3">
+                                    <h3 class="text-white text-[24px] font">John Williams</h3>
+                                    <p class="text-[18px] text-[#B8B8B8]">Lead designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 2 -->
+                        <div class="bg-[url('images/1k.png')] p-12 rounded-md mx-3">
+                            <p class="text-center text-[18px] text-white text-font">OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects.Love yait for me to use on my projects.</p>
+                            <img src="images/Star.png" alt="" class="text-center pt-10 mx-auto">
+                            <div class="flex justify-center items-center pt-14">
+                                <img src="images/Ellipse 2.png" alt="">
+                                <div class="ms-3">
+                                    <h3 class="text-white text-[24px] font">Jane Copper</h3>
+                                    <p class="text-[18px] text-[#B8B8B8]">Lead designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 3 -->
+                        <div class="bg-[url('images/1k.png')] p-12 rounded-md ">
+                            <p class="text-center text-[18px] text-white text-font">OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects.Love yait for me to use on my projects.</p>
+                            <img src="images/Star.png" alt="" class="text-center pt-10 mx-auto">
+                            <div class="flex justify-center items-center pt-14">
+                                <img src="images/Ellipse 2 (1).png" alt="">
+                                <div class="ms-3">
+                                    <h3 class="text-white text-[24px] font">Emily</h3>
+                                    <p class="text-[18px] text-[#B8B8B8]">Lead designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 1 -->
+                        <div class="bg-[url('images/1k.png')] p-12 rounded-md ">
+                            <p class="text-center text-[18px] text-white text-font">OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects.Love yait for me to use on my projects.</p>
+                            <img src="images/Star.png" alt="" class="text-center pt-10 mx-auto">
+                            <div class="flex justify-center items-center pt-14">
+                                <img src="images/Ellipse 1.png" alt="">
+                                <div class="ms-3">
+                                    <h3 class="text-white text-[24px] font">John Williams</h3>
+                                    <p class="text-[18px] text-[#B8B8B8]">Lead designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 2 -->
+                        <div class="bg-[url('images/1k.png')] p-12 rounded-md mx-3">
+                            <p class="text-center text-[18px] text-white text-font">OHHHH Thanks god !!!! Finally there
+                                is someone making it for me to use on my projects.Love yait for me to use on my
+                                projects.</p>
+                            <img src="images/Star.png" alt="" class="text-center pt-10 mx-auto">
+                            <div class="flex justify-center items-center pt-14">
+                                <img src="images/Ellipse 2.png" alt="">
+                                <div class="ms-3">
+                                    <h3 class="text-white text-[24px] font">Jane Copper</h3>
+                                    <p class="text-[18px] text-[#B8B8B8]">Lead designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Item 3 -->
+                        <div class="bg-[url('images/1k.png')] p-12 rounded-md ">
+                            <p class="text-center text-[18px] text-white text-font">OHHHH Thanks god !!!! Finally there
+                                is someone making it for me to use on my projects.Love yait for me to use on my
+                                projects.</p>
+                            <img src="images/Star.png" alt="" class="text-center pt-10 mx-auto">
+                            <div class="flex justify-center items-center pt-14">
+                                <img src="images/Ellipse 2 (1).png" alt="">
+                                <div class="ms-3">
+                                    <h3 class="text-white text-[24px] font">Emily</h3>
+                                    <p class="text-[18px] text-[#B8B8B8]">Lead designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class=" bg-[#242424]  text-center text-white pt-10 pb-4 relative">
+        <div class="absolute bottom-0 right-0">
+            <img src="./images/footer.png" alt="">
+        </div>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-5">
+                    <div>
+                        <img src="images/viraj_logo-removebg-preview 1.png" alt="" class="pb-3 mx-auto md:mx-0">
+                        <div>
+                            <p class="text-center md:text-start text-[#B8B8B8]">It is a long established fact that a
+                                reader will be
+                                distracted by the readable content of a page when looking at its layout. It is a long
+                                established fact that a reader will be distracted by the readable content of a page when
+                                looking at its layout. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 md:grid-cols-4 pt-5">
+                            <div class="md:ps-5 ">
+                                <h5 class="text-font text-lg text-start">privacy's</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">About Us</a></li>
+                                    <li class="py-3"><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li class="py-3"><a href="">Refund and Returns</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 ">
+                                <h5 class="text-font text-lg text-start">Quick Links</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">Facials</a></li>
+                                    <li class="py-3"><a href="">Skin</a></li>
+                                    <li><a href="">Hair Colour</a></li>
+                                    <li class="py-3"><a href="">Nail Studio</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 pb-5">
+                                <h5 class="text-font text-lg text-start">Pages</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">Home</a></li>
+                                    <li class="py-3"><a href="">About Us</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li class="py-3"><a href="">Blog</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 pb-4 ">
+                                <h5 class="text-font text-lg text-start">Social Media</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <div class="flex pt-2">
+                                    <button class="w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    </button>
+                                    <button
+                                        class="w-[35px] h-[35px] p-1 mx-2 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </button>
+                                    <button class="w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class=" border-[#fefefe3b]">
+        <div class=" text-center py-3">
+            <p class="text-[#B8B8B8] text-sm">Viraj Makeover - All rights reserved - 2023</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.reviews-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 572,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+</body>
+
+</html>

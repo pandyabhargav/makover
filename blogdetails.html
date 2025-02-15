@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraj Makeover</title>
+    <link rel="shortcut icon" href="images/viraj_logo-removebg-preview 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section (Sticky) -->
+    <header class="bg-[#212121] hidden:border-b-2 md:border-b-2 border-[#fefefe3b]" id="header">
+        <div class="container mx-auto">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between p-4">
+                <!-- Logo -->
+                <div class="relative flex items-center order-1 md:order-2">
+                    <img src="images/viraj_logo-removebg-preview 1.png" alt="Logo" class="w-20">
+                    <img src="images/Group 26 (1).png" alt="" class="absolute top-0 right-[-15px]">
+                </div>
+
+                <!-- Menu Icon (Hamburger) -->
+                <div class="text-white order-2 md:order-1">
+                    <button id="menu-toggle">
+                        <i class="fa-solid fa-bars text-[24px]"></i>
+                    </button>
+                </div>
+
+                <!-- Search & Button -->
+                <div class="hidden md:flex items-center space-x-4 order-3">
+                    <!-- Search Icon -->
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass w-6 h-6 text-white"></i>
+                    </button>
+                    <a href="" class="bg-[#009746] text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
+                        Get A Quote →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section (Initially hidden) -->
+    <div id="menu" class="hidden md:bg-[url('images/Rectangle.png')] absolute top-0 left-0 w-full h-full bg-cover bg-center bg-[#212121] z-50 transform transition-all duration-500 ease-in-out">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="pt-5 px-4">
+                    <div class="flex justify-between items-center md:justify-between">
+                    
+                        <img src="images/viraj_logo-removebg-preview 1.png" alt="Logo" class="w-20">
+
+                        <button id="close-menu"
+                            class="text-white text-3xl ">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+
+
+                    <!-- Navigation Links -->
+                    <ul class="flex flex-col space-y-3 lg:space-y-5 text-white font text-center mt-8 lg:mt-[10%]">
+                        <li><a href="./index.html" class="text-2xl nav-link hover:text-[#009746]">Home</a></li>
+                        <li><a href="./about.html" class="text-2xl nav-link hover:text-[#009746]">About Us</a></li>
+                        <li><a href="./product.html" class="text-2xl nav-link hover:text-[#009746]">Products</a></li>
+                        <li><a href="./gallery.html" class="text-2xl nav-link hover:text-[#009746]">Gallery</a></li>
+                        <li><a href="./blog.html" class="text-2xl nav-link hover:text-[#009746]">Blog</a></li>
+                        <li><a href="./contact.html" class="text-2xl nav-link hover:text-[#009746]">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-[10px] p-6 border-t border-b border-white/10 hidden md:block">
+            <div class="container mx-auto">
+                <div class="row grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm">
+                    <div class="flex items-center rounded-lg">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+
+                        <!-- Address Text -->
+                        <span class="text-[16px] text-start text-[#B8B8B8] text-font ms-3">
+                            211, The Grand Plaza, VIP Road, Vesu,<br> Surat, Gujarat 395007
+                        </span>
+                    </div>
+
+
+                    <div class="p-5 flex  items-center justify-center"> 
+                        <button class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-phone-volume  text-lg"></i>
+                        </button>
+                        
+                        <span class="text-[22px] text-[#B8B8B8] text-font ms-3">08048128938</span>
+                    </div>
+
+
+                    <div class="p-5 flex  items-center justify-center">
+                        <button class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </button>
+                        
+                        <span class="text-[22px] text-[#B8B8B8] text-font ms-3"> purefamilysalon@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gallery  -->
+    <section class="relative bg-[url('images/about.png')] h-[550px] bg-cover bg-center flex items-center -z-10">
+        <div class="absolute inset-0 bg-black opacity-60 mix-blend-multiply"></div>
+        <div class="container mx-auto px-4">
+            <div class="row">
+                <div>
+                    <img src="images/Vector 1 (1).png" alt=""
+                        class="top-[25%] w-28 lg:w-40 absolute  md:left-[10%] lg:left-[12%]">
+                    <h1
+                        class="uppercase text-[28px] md:text-[48px] lg:text-[80px] font font-bold text-white absolute left-[10%] md:left-[13%] lg:left-[15%] top-[35%] md:top-[30%] lg:top-[35%]">
+                        BLOG DETAILS
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="images/Rectangle 6.png" alt="" class="w-full">
+
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[16%] left-4 md:top-[18%] lg:top-[18%]  text-center">
+                <a href=""><i class="fa-brands fa-instagram text-white"></i></a>
+            </div>
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[43%] left-4 md:top-[41.5%] lg:top-[45%]  text-center">
+                <a href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+            </div>
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[70%] left-4 md:top-[66%] lg:top-[70%]  text-center">
+                <a href=""><i class="fa-brands fa-youtube text-white"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#212121] py-16">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="grid grid-cols-10 gap-4 md:pt-10">
+                    <div class="col-span-10 md:col-span-6 p-4 rounded-lg">
+                        <img src="images/Group 145.png" alt="" class="">
+
+                        <div class="flex items-center">
+                            <div>
+                                <i class="fa-solid fa-calendar-days text-white"></i> <span
+                                    class="text-white text-font text-[13px] md:text-[18px] ps-1">23 August</span>
+                            </div>
+                            <div class="px-10">
+                                <i class="fa-solid fa-user text-white"></i> <span
+                                    class="text-white text-font text-[13px] md:text-[18px] ps-1">By Admin</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-comment-dots text-white"></i> <span
+                                    class="text-white text-font text-[13px] md:text-[18px] ps-1">Comments</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h1 class="text-[24px] lg:text-[48px] font font-bold text-white pt-5">AMEZING MICRO BLADNING <br class="block md:hidden">IN VESU</h1>
+                            <p class="text-[#7F7F7F] text-[13px] md:text-[18px] text-font pt-2">To make sure you don’t make a mistake
+                                while buying a ring online, the AurianeJewelry team has <br>prepared a small size guide
+                                with several options available to you. Otherwise, to make sure <br>you don’t make a
+                                mistake.</p>
+
+                            <p class="text-[#7F7F7F] text-[13px] md:text-[18px] text-font pt-3">Moreover, if you bought one of our
+                                rings and the size does not suit you, you can always come <br> and exchange it for
+                                another size in our shop! Partili enem amir. Cum soluta alteru, novut dicam te <br>
+                                velid, vix ut des ert mltera indoctum. Ne sabeo legendo vel, ue duoris debet paulo
+                                vocibus, acc <br>usata facilisis qui etui. Vivendo en reprehe ndunt his, ne igiure
+                                equidem vel. Singulis oratio mel, <br>sea ei integredi disse ntias. In e vocent cetero
+                                omittam. Cum iuvaret deserui dissentiet at. Mei <br> facete pertinax, at meliore
+                                sapientem deterruisset nam sumi tantas de nilidi. Vel case alterum <br>senserit, vis
+                                harum graecis dissentias et. Ut vim impedit temporibus, eum in novum sensibus, <br>
+                                rationi scriptorem.</p>
+
+                            <div class="pt-5 flex">
+                                <div class="line w-1 h-42 bg-white"></div>
+                                <div class="ps-3">
+                                    <img src="images/Frame.png" alt="" class="w-[28px] md:w-[48px]">
+                                    <p class="text-[#B8B8B8] text-[13px] md:text-[18px] text-font pt-3">Vivamus aliquet elit ac nisl.
+                                        Ut a nisl id ante tempus hendrerit. Phasellus accumsan cursus velitid <br> ante
+                                        tempus hendrerit. Donec interdum, metus et hendrerit aliquet”</p>
+                                    <div class="flex items-center pt-3">
+                                        <img src="images/Ellipse 17.png" alt="">
+                                        <h3 class="text-[#FEFEFE] text-[20px] ps-2">Erin Curtis</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-[#B8B8B8] text-[13px] md:text-[18px] text-font pt-5">Moreover, if you bought one of our
+                                rings and the size does not suit you, you can always come <br> and exchange it for
+                                another size in our shop! Partili enem amir. Cum soluta alteru, novut dicam te
+                                <br>velid, vix ut des ert mltera indoctum.
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <!-- 40% Section -->
+                    <div class="col-span-10 md:col-span-4 p-4 rounded-lg">
+                        <h2 class="text-[24px] font font-bold text-[#FEFEFE]">Latest Posts</h2>
+                        <div>
+                            <div class="flex items-center pt-5 md:p-0">
+                                <div>
+                                    <img src="images/Group 1000004522.png" alt="">
+                                </div>
+                                <div class="ps-4">
+                                    <h3 class="text-[14px] text-[#FEFEFE] font font-bold ">The size guide: a little help to avoid <br class="hidden lg:block">mistakes</h3>
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-calendar-days text-white"></i>
+                                        <span class="text-white text-font text-[13px] ps-1">23 August</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center py-5">
+                                <div>
+                                    <img src="images/Group 1000004522 (1).png" alt="">
+                                </div>
+                                <div class="ps-4">
+                                    <h3 class="text-[14px] text-[#FEFEFE] font font-bold ">The size guide: a little help
+                                        to avoid <br>mistakes</h3>
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-calendar-days text-white"></i>
+                                        <span class="text-white text-font text-[13px] ps-1">24 August</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div>
+                                    <img src="images/Group 1000004522 (2).png" alt="">
+                                </div>
+                                <div class="ps-4">
+                                    <h3 class="text-[14px] text-[#FEFEFE] font font-bold ">The size guide: a little help
+                                        to avoid <br>mistakes</h3>
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-calendar-days text-white"></i>
+                                        <span class="text-white text-font text-[13px] ps-1">25 August</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center py-5">
+                                <div>
+                                    <img src="images/Group 1000004522 (3).png" alt="">
+                                </div>
+                                <div class="ps-4">
+                                    <h3 class="text-[14px] text-[#FEFEFE] font font-bold ">The size guide: a little help
+                                        to avoid <br>mistakes</h3>
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-calendar-days text-white"></i>
+                                        <span class="text-white text-font text-[13px] ps-1">26 August</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- tags -->
+                            <div>
+                                <h2 class="text-[24px] text-[#FEFEFE] font font-semibold pb-3">Tags</h2>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="grid grid-cols-3">
+                                        <button
+                                            class="h-14 px-2 py-1 lg:px-3 lg:py-2 border border-[#7F7F7F] text-[13px] lg:text-[20px] text-font text-[#B8B8B8]">Events</button>
+                                        <button
+                                            class="h-14  px-2 py-1 lg:px-3 lg:py-2 mx-3 border border-[#7F7F7F] text-[13px] lg:text-[20px] text-font text-[#B8B8B8]">Fashion</button>
+                                        <button
+                                            class="h-14 px-2 py-1 lg:px-3 lg:py-2 border border-[#7F7F7F] text-[13px] lg:text-[20px] text-font text-[#B8B8B8]">Precious
+                                            Beauty</button>
+                                    </div>
+                                    <div class="grid grid-cols-3">
+                                        <button
+                                            class="h-14 px-2 py-1 lg:px-3 lg:py-2 border border-[#7F7F7F] text-[13px] lg:text-[20px] text-font text-[#B8B8B8]">Style
+                                            Guide</button>
+                                        <button
+                                            class="h-14 px-2 py-1 lg:px-3 lg:py-2 mx-3 border border-[#7F7F7F] text-[13px] lg:text-[20px] text-font text-[#B8B8B8]">Trends</button>
+                                        <button
+                                            class="h-14 px-2 py-1 lg:px-3 lg:py-2 border border-[#7F7F7F] text-[13px] lg:text-[20px] text-font text-[#B8B8B8]">Working</button>
+                                    </div>
+                                </div>
+
+                                <div class="relative">
+                                    <!-- First Image -->
+                                    <img src="images/Rectangle 78.png" alt="" class="pt-5 w-full">
+
+                                    <!-- Second Image, positioned over the first one -->
+                                    <img src="images/Rectangle 79.png" alt=""
+                                        class="absolute top-0 left-0 w-full h-full object-cover">
+
+                                    <!-- Text placed over both images -->
+                                    <h2
+                                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[26px] md:text-[24px] xl:text-[53px] font font-semibold text-white">
+                                        30% OFFER
+                                    </h2>
+
+                                    <h4
+                                        class="absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[20px] md:text-[16px] lg:text-[20px] font-semibold text-white">
+                                        selected Courses
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class=" bg-[#242424]  text-center text-white pt-10 pb-4 relative">
+        <div class="absolute bottom-0 right-0">
+            <img src="./images/footer.png" alt="">
+        </div>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-5">
+                    <div>
+                        <img src="images/viraj_logo-removebg-preview 1.png" alt="" class="pb-3 mx-auto md:mx-0">
+                        <div>
+                            <p class="text-center md:text-start text-[#B8B8B8]">It is a long established fact that a
+                                reader will be
+                                distracted by the readable content of a page when looking at its layout. It is a long
+                                established fact that a reader will be distracted by the readable content of a page when
+                                looking at its layout. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 md:grid-cols-4 pt-5">
+                            <div class="md:ps-5 ">
+                                <h5 class="text-font text-lg text-start">privacy's</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">About Us</a></li>
+                                    <li class="py-3"><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li class="py-3"><a href="">Refund and Returns</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 ">
+                                <h5 class="text-font text-lg text-start">Quick Links</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">Facials</a></li>
+                                    <li class="py-3"><a href="">Skin</a></li>
+                                    <li><a href="">Hair Colour</a></li>
+                                    <li class="py-3"><a href="">Nail Studio</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 pb-5">
+                                <h5 class="text-font text-lg text-start">Pages</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">Home</a></li>
+                                    <li class="py-3"><a href="">About Us</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li class="py-3"><a href="">Blog</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 pb-4 ">
+                                <h5 class="text-font text-lg text-start">Social Media</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <div class="flex pt-2">
+                                    <button class="w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    </button>
+                                    <button
+                                        class="w-[35px] h-[35px] p-1 mx-2 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </button>
+                                    <button class="w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class=" border-[#fefefe3b]">
+        <div class=" text-center py-3">
+            <p class="text-[#B8B8B8] text-sm">Viraj Makeover - All rights reserved - 2023</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/blog.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

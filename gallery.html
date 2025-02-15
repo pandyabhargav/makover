@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraj Makeover</title>
+    <link rel="shortcut icon" href="images/viraj_logo-removebg-preview 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section (Sticky) -->
+    <header class="bg-[#212121] hidden:border-b-2 md:border-b-2 border-[#fefefe3b]" id="header">
+        <div class="container mx-auto">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between p-4">
+                <!-- Logo -->
+                <div class="relative flex items-center order-1 md:order-2">
+                    <img src="images/viraj_logo-removebg-preview 1.png" alt="Logo" class="w-20">
+                    <img src="images/Group 26 (1).png" alt="" class="absolute top-0 right-[-15px]">
+                </div>
+
+                <!-- Menu Icon (Hamburger) -->
+                <div class="text-white order-2 md:order-1">
+                    <button id="menu-toggle">
+                        <i class="fa-solid fa-bars text-[24px]"></i>
+                    </button>
+                </div>
+
+                <!-- Search & Button -->
+                <div class="hidden md:flex items-center space-x-4 order-3">
+                    <!-- Search Icon -->
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass w-6 h-6 text-white"></i>
+                    </button>
+                    <a href="" class="bg-[#009746] text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
+                        Get A Quote →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section (Initially hidden) -->
+    <div id="menu"
+        class="hidden md:bg-[url('images/Rectangle.png')] absolute top-0 left-0 w-full h-full bg-cover bg-center bg-[#212121] z-50 transform transition-all duration-500 ease-in-out">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="pt-5 px-4">
+                    <div class="flex justify-between items-center md:justify-between">
+
+                        <img src="images/viraj_logo-removebg-preview 1.png" alt="Logo" class="w-20">
+
+                        <button id="close-menu" class="text-white text-3xl ">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+
+
+                    <!-- Navigation Links -->
+                    <ul class="flex flex-col space-y-3 lg:space-y-5 text-white font text-center mt-8 lg:mt-[10%]">
+                        <li><a href="./index.html" class="text-2xl nav-link hover:text-[#009746]">Home</a></li>
+                        <li><a href="./about.html" class="text-2xl nav-link hover:text-[#009746]">About Us</a></li>
+                        <li><a href="./product.html" class="text-2xl nav-link hover:text-[#009746]">Products</a></li>
+                        <li><a href="./gallery.html" class="text-2xl nav-link hover:text-[#009746]">Gallery</a></li>
+                        <li><a href="./blog.html" class="text-2xl nav-link hover:text-[#009746]">Blog</a></li>
+                        <li><a href="./contact.html" class="text-2xl nav-link hover:text-[#009746]">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-[10px] p-6 border-t border-b border-white/10 hidden md:block">
+            <div class="container mx-auto">
+                <div class="row grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm">
+                    <div class="flex items-center rounded-lg">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+
+                        <!-- Address Text -->
+                        <span class="text-[16px] text-start text-[#B8B8B8] text-font ms-3">
+                            211, The Grand Plaza, VIP Road, Vesu,<br> Surat, Gujarat 395007
+                        </span>
+                    </div>
+
+
+                    <div class="p-5 flex  items-center justify-center">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-phone-volume  text-lg"></i>
+                        </button>
+
+                        <span class="text-[22px] text-[#B8B8B8] text-font ms-3">08048128938</span>
+                    </div>
+
+
+                    <div class="p-5 flex  items-center justify-center">
+                        <button
+                            class="text-white text-lg w-12 h-12 border rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </button>
+
+                        <span class="text-[22px] text-[#B8B8B8] text-font ms-3"> purefamilysalon@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gallery  -->
+    <section class="relative bg-[url('images/about.png')] h-[550px] bg-cover bg-center flex items-center -z-10">
+        <div class="absolute inset-0 bg-black opacity-60 mix-blend-multiply"></div>
+        <div class="container mx-auto px-4">
+            <div class="row">
+                <div>
+                    <img src="images/Vector 1 (1).png" alt=""
+                        class="top-[25%] w-28 lg:w-40 absolute  md:left-[10%] lg:left-[12%]">
+                    <h1
+                        class="uppercase text-[28px] md:text-[48px] lg:text-[80px] font font-bold text-white absolute left-[10%] md:left-[13%] lg:left-[15%] top-[35%] md:top-[30%] lg:top-[35%]">
+                        GALLERY
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="images/Rectangle 6.png" alt="" class="w-full">
+
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[16%] left-4 md:top-[18%] lg:top-[18%]  text-center">
+                <a href=""><i class="fa-brands fa-instagram text-white"></i></a>
+            </div>
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[43%] left-4 md:top-[41.5%] lg:top-[45%]  text-center">
+                <a href=""><i class="fa-brands fa-facebook-f text-white"></i></a>
+            </div>
+            <div
+                class="absolute w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100 top-[70%] left-4 md:top-[66%] lg:top-[70%]  text-center">
+                <a href=""><i class="fa-brands fa-youtube text-white"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery photo -->
+    <section class="bg-[#131313] py-10 lg:py-16 relative">
+        <img src="images/Group 1000004492.png" alt="" class="absolute right-14 w-16 hidden lg:block">
+        <img src="images/Group 1000004492.png" alt="" class="absolute left-14 bottom-24 w-16 hidden lg:block">
+
+        <div class="container mx-auto">
+            <div class="row ">
+
+                <div class="flex items-center justify-center space-x-3">
+                    <h1 class="font text-[24px] md:text-[48px] font-bold text-white">
+                        Explore <span class="text-[#009746]">Photo's</span>
+                    </h1>
+                    <img src="images/Section.png" alt="Section Icon" class="w-10 h-10">
+                </div>
+
+                <div class="hidden md:block mx-5">
+                    <div class="grid grid-cols-10 pt-5 gap-4">
+                        <div class="col-span-10 md:col-span-6 flex items-center rounded-lg relative group">
+                            <img src="images/Gr.png" alt="Image 1" class="rounded-lg h-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] text-[46px] 
+                               opacity-0 scale-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+
+                        <div class="col-span-10 md:col-span-4 flex  items-center  relative group">
+                            <img src="images/Rectangle 4331.png" alt="Image 2" class="rounded-lg w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] text-[46px] 
+                               opacity-0 scale-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 pt-5 gap-4">
+
+                        <div class="relative group">
+                            <img src="images/Rectangle 4332.png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                        <div class="relative group">
+                            <img src="images/Rectangle 4333.png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                        <div class="relative group">
+                            <img src="images/Rectangle 4334.png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                        <div class="relative group">
+                            <img src="images/Rectangle 4335.png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-10 pt-5 items-center justify-between gap-4">
+                        <!-- First Column -->
+                        <div class="col-span-10 md:col-span-4 items-center">
+                            <div class="relative group pb-5">
+                                <img src="images/Rectangle 4337.png" alt="Image 2" class="w-full">
+                                <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                                   translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                                   group-hover:opacity-100 group-hover:scale-100"></i>
+                            </div>
+                            <div class="relative group pt-5">
+                                <img src="images/Rectangle 4338.png" alt="Image 2" class="w-full">
+                                <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                                   translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                                   group-hover:opacity-100 group-hover:scale-100"></i>
+                            </div>
+                        </div>
+                    
+                        <!-- Second Column -->
+                        <div class="col-span-10 md:col-span-6 rounded-lg relative group">
+                            <img src="images/Rectangle 4336.png" alt="Image 2" class="rounded-lg w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                    </div>
+                    
+
+                    <div class="grid grid-cols-4 pt-5 gap-4">
+                        <div class="relative group">
+                            <img src="images/Rectangle 4332 (1).png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                        <div class="relative group">
+                            <img src="images/Rectangle 4333 (1).png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                        <div class="relative group">
+                            <img src="images/Rectangle 4334 (1).png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                        <div class="relative group">
+                            <img src="images/Rectangle 4335 (1).png" alt="" class="w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-10 pt-5 items-center justify-between gap-4">
+                        <div class="col-span-10 md:col-span-6 rounded-lg relative group">
+                            <img src="images/Rectangle 4336 (1).png" alt="Image 2" class="rounded-lg w-full">
+                            <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                               translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                               group-hover:opacity-100 group-hover:scale-100"></i>
+                        </div>
+                    
+                        <div class="col-span-10 md:col-span-4 items-center">
+                            <div class="relative group pb-5">
+                                <img src="images/Rectangle 4337 (1).png" alt="Image 2" class="w-full">
+                                <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                                   translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                                   group-hover:opacity-100 group-hover:scale-100"></i>
+                            </div>
+                            <div class="relative group pt-5">
+                                <img src="images/Rectangle 4338 (1).png" alt="Image 2" class="w-full">
+                                <i class="fa-solid fa-magnifying-glass text-white z-10 absolute left-[50%] top-[50%] 
+                                   translate-x-[-50%] translate-y-[-50%] text-[46px] opacity-0 scale-0 transition-all duration-300 
+                                   group-hover:opacity-100 group-hover:scale-100"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <main class="max-w-md mx-auto p-4 block md:hidden ">
+                    <!-- Hero Image -->
+                    <div class="relative  mb-4">
+                        <div class="relative mt-5 flex justify-center">
+                            <img src="images/Rectangle 48.png" alt="">
+                            <i
+                                class="absolute fa-brands fa-instagram top-1/2 left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Grid -->
+                    <div class="grid grid-cols-1 gap-4">
+                        <!-- Consultation Image -->
+                        <div class="aspect-video">
+                            <img src="images/Rectangle 4350.png" alt="Salon consultation"
+                                class="w-full h-full object-cover rounded-lg shadow-sm" />
+                        </div>
+
+                        <!-- Service Images Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 50 (4).png" alt="Hair styling service"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 51.png" alt="Beauty treatment"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 50 (1).png" alt="Makeup service"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 51 (1).png" alt="Beauty products"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                        </div>
+
+
+
+                        <!-- Beauty Products Image -->
+                        <div class="aspect-video">
+                            <img src="images/Rectangle 4349.png" alt="Salon consultation"
+                                class="w-full h-full object-cover rounded-lg shadow-sm" />
+                        </div>
+
+                        <!-- Portrait Images -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 50 (2).png" alt="Hair styling service"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 51 (2).png" alt="Beauty treatment"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 50 (3).png" alt="Makeup service"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                            <div class="aspect-square">
+                                <img src="images/Rectangle 51 (3).png" alt="Beauty products"
+                                    class="w-full h-full object-cover rounded-lg shadow-sm" />
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+
+                <div class="flex justify-center pt-5">
+
+                    <button
+                        class="bg-[#009746] font tetx-[18px] text-white px-4 py-2 rounded-full hover:bg-green-600 transition mt-5">
+                        Load More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- footer  -->
+    <footer class=" bg-[#242424]  text-center text-white pt-10 pb-4 relative">
+        <div class="absolute bottom-0 right-0">
+            <img src="./images/footer.png" alt="">
+        </div>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-5">
+                    <div>
+                        <img src="images/viraj_logo-removebg-preview 1.png" alt="" class="pb-3 mx-auto md:mx-0">
+                        <div>
+                            <p class="text-center md:text-start text-[#B8B8B8]">It is a long established fact that a
+                                reader will be
+                                distracted by the readable content of a page when looking at its layout. It is a long
+                                established fact that a reader will be distracted by the readable content of a page when
+                                looking at its layout. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 md:grid-cols-4 pt-5">
+                            <div class="md:ps-5 ">
+                                <h5 class="text-font text-lg text-start">privacy's</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">About Us</a></li>
+                                    <li class="py-3"><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li class="py-3"><a href="">Refund and Returns</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 ">
+                                <h5 class="text-font text-lg text-start">Quick Links</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">Facials</a></li>
+                                    <li class="py-3"><a href="">Skin</a></li>
+                                    <li><a href="">Hair Colour</a></li>
+                                    <li class="py-3"><a href="">Nail Studio</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 pb-5">
+                                <h5 class="text-font text-lg text-start">Pages</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <ul class="list-disc pl-6 text-start text-[12px] md:text-[16px] text-[#B8B8B8] pt-2">
+                                    <li><a href="">Home</a></li>
+                                    <li class="py-3"><a href="">About Us</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li class="py-3"><a href="">Blog</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:ps-5 pb-4 ">
+                                <h5 class="text-font text-lg text-start">Social Media</h5>
+                                <div class="w-[30px] h-[1px] bg-slate-200 my-2"></div>
+                                <div class="flex pt-2">
+                                    <button class="w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    </button>
+                                    <button
+                                        class="w-[35px] h-[35px] p-1 mx-2 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </button>
+                                    <button class="w-[35px] h-[35px] p-1 rounded-full border-[1px] border-gray-100">
+                                        <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class=" border-[#fefefe3b]">
+        <div class=" text-center py-3">
+            <p class="text-[#B8B8B8] text-sm">Viraj Makeover - All rights reserved - 2023</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
